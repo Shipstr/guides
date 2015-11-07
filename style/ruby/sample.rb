@@ -54,7 +54,7 @@ class SomeClass
   def method_with_large_hash
     {
       :one => "value",
-      :two => "value",
+      :two => "value"
     }
   end
 
