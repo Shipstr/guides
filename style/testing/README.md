@@ -42,6 +42,33 @@ Factories
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
 * Use one factories.rb file per project.
+* When defining one-to-one associations, use the `association` method with `strategy: :build`. For example:
+  BAD:
+  ```
+    factory :something do
+      an_association
+    end
+  ```
+
+  GOOD:
+  ```
+    factory :something do
+      association :an_association, strategy: :build
+    end
+  ```
+* When defining one-to-many associations, use the `after(:build)` callback with a transient attribute, and check that there's no instances before adding one. For example:
+  ```
+    factory :store do
+      attribute "value"
+
+      transient { location_count 1 }
+      after(:build) do |instance, evaluator|
+        if instance.locations.blank?
+          instance.locations = build_list(:location, evaluator.location_count)
+        end
+      end
+    end
+  ```
 
 Unit Tests
 ----------
