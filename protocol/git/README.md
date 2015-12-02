@@ -82,38 +82,17 @@ For changes which they can make themselves, they check out the branch.
 They make small changes right in the branch, test the feature on their machine,
 run tests, commit, and push.
 
-When satisfied, they comment on the pull request `Ready to merge.`
+They leave a `Ready to merge` comment on the pull request when all the pull
+request checks are reporting valid, i.e. green, the `Merge pull request` button
+is also green, and they are satisfied with the changes.
 
 Merge
 -----
 
-Rebase interactively. Squash commits like "Fix whitespace" into one or a
-small number of valuable commit(s). Edit commit messages to reveal intent. Run
-tests.
+Once the reviewer leaves a `Ready to merge.` message and GitHub is able to
+automatically merge the pull request, [merge it] by hitting the merge button.
 
-    git fetch origin
-    git rebase -i origin/master
+[Delete the branch] after the PR has been merged.
 
-Force push your branch. This allows GitHub to automatically close your pull
-request and mark it as merged when your commit(s) are pushed to master. It also
- makes it possible to [find the pull request] that brought in your changes.
-
-    git push --force origin <branch-name>
-
-View a list of new commits. View changed files. Merge branch into master.
-
-    git log origin/master..<branch-name>
-    git diff --stat origin/master
-    git checkout master
-    git merge <branch-name> --ff-only
-    git push
-
-Delete your remote feature branch.
-
-    git push origin --delete <branch-name>
-
-Delete your local feature branch.
-
-    git branch --delete <branch-name>
-
-[find the pull request]: http://stackoverflow.com/a/17819027
+[merge it]: https://help.github.com/articles/merging-a-pull-request/
+[Delete the branch]: https://help.github.com/articles/deleting-unused-branches/
