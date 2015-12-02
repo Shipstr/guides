@@ -20,11 +20,6 @@ Git Protocol
 
 Follow the normal [Git Protocol](/protocol/git).
 
-Product Review
---------------
-
-Follow the normal [Product Review protocol](/protocol/product-review).
-
 Code Review
 -----------
 
@@ -46,8 +41,6 @@ Rails work, look in particular for:
 Deploy
 ------
 
-__TODO:__ This section needs to be updated once we have a deployment process.
-
 View a list of new commits. View changed files.
 
     git fetch staging
@@ -58,14 +51,9 @@ If necessary, add new environment variables.
 
     heroku config:add NEW_VARIABLE=value --remote staging
 
-Deploy to [Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
+Deploy to Heroku.
 
-    git push staging
-
-If necessary, run migrations and restart the dynos.
-
-    heroku run rake db:migrate --remote staging
-    heroku restart --remote staging
+    bin/rake deploy:migrations:[qa|qa2|staging]
 
 [Introspect] to make sure everything's ok.
 
@@ -75,18 +63,10 @@ Test the feature in browser.
 
 Deploy to production.
 
-    git fetch production
-    git log production/master..master
-    git diff --stat production/master
-    heroku config:add NEW_VARIABLE=value --remote production
-    git push production
-    heroku run rake db:migrate --remote production
-    heroku restart --remote production
+    bin/rake deploy:migrations:prod
     watch heroku ps --remote production
 
 Watch logs and metrics dashboards.
-
-Close pull request and comment `Merged.`
 
 [Introspect]: http://blog.heroku.com/archives/2011/6/24/the_new_heroku_3_visibility_introspection/
 
