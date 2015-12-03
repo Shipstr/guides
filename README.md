@@ -3,12 +3,12 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
+* [Best Practices](/best-practices)
+* [Code Review](/code-review)
 * [Protocol](/protocol)
   * [Communication](/protocol/communication)
   * [Git](/protocol/git)
   * [Rails](/protocol/rails)
-* [Code Review](/code-review)
-* [Best Practices](/best-practices)
 * [Style](/style)
   * [CoffeeScript](/style/coffeescript)
   * [Git](/style/git)
