@@ -10,6 +10,15 @@ Guides for getting things done, programming well, and programming in style.
 * [Code Review](/code-review)
 * [Best Practices](/best-practices)
 * [Style](/style)
+  * [CoffeeScript](/style/coffeescript)
+  * [Git](/style/git)
+  * [HTML](/style/html)
+  * [JavaScript](/style/javascript)
+  * [Rails](/style/rails)
+  * [Ruby](/style/ruby)
+  * [Sass](/style/sass)
+  * [Testing](/style/testing)
+* [Security](/security)
 
 High level guidelines:
 
