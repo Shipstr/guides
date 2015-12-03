@@ -4,7 +4,7 @@ Guides
 Guides for getting things done, programming well, and programming in style.
 
 * [Protocol](/protocol)
-  * [Communication](/communication)
+  * [Communication](/protocol/communication)
   * [Git](/protocol/git)
   * [Rails](/protocol/rails)
 * [Code Review](/code-review)
