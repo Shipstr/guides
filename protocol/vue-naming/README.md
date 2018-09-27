@@ -18,4 +18,9 @@ Here is a list of conventions that we all should follow when introducing new com
 - All directories should be named after a resource or object, when possible.
 - Components that are the entry point to any route should be one level deep in these resourcefully-named folders.
 - Components that are the entry point to any route should prefer resourceful names -- `Index.vue`, `Show.vue`, `New.vue`, `Edit.vue`, when possible.
-- Components imported by any entry point should 
+- Components imported by any entry point should be seen as partials and start with a `_`, such as `_FormActions.vue`.
+
+
+- Use descriptive words to make it obvious what your partial component is. Some examples:
+  - `Fieldset` for a piece of a form
+  - `FormControl` for a single more complex form control
