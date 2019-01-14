@@ -9,7 +9,6 @@ Guides for getting things done, programming well, and programming in style.
   * [Communication](/protocol/communication)
   * [Git](/protocol/git)
   * [Rails](/protocol/rails)
-  * [Vue Naming](/protocol/vue-naming)
 * [Style](/style)
   * [CoffeeScript](/style/coffeescript)
   * [Git](/style/git)
@@ -18,6 +17,7 @@ Guides for getting things done, programming well, and programming in style.
   * [Rails](/style/rails)
   * [Ruby](/style/ruby)
   * [Sass](/style/sass)
+  * [Vue](/protocol/vue)
   * [Testing](/style/testing)
 * [Security](/security)
 
