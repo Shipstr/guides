@@ -7,8 +7,10 @@ Vue is unopinionated about how to name files within the project. This can lead t
 
 - Component filenames are ProperCased and mixins are snake_cased.
 - Components live entirely in `src/components/` and `src/views/`.
-- Entry-point components live at the `src/views/{resource}/` level, and not any deeper.
-- Child components are resourcefully named and live at the `src/views/{resource}/` level or deeper.
+- Components are resourcefully named when possible: index, show, new, edit.
+- Entry-point components live at the `src/views/{resource}/` level and not any deeper.
+- Child components live at the `src/views/{resource}/` level or deeper.
+- Prefix child components and partially reused components in `src/components` with an underscore `_`.
 
 ### Generic Components
 
