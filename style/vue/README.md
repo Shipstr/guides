@@ -10,11 +10,7 @@ Vue is unopinionated about how to name files within the project. This can lead t
 - Components are resourcefully named when possible: index, show, new, edit.
 - Entry-point components live at the `src/views/{resource}/` level and not any deeper.
 - Child components live at the `src/views/{resource}/` level or deeper.
-- Prefix child components and partially reused components in `src/components` with an underscore `_`.
-
-### Generic Components
-
-**Globally reusable** components, relevant to any area of your app, live in `src/components`. Components that are generic to **one area** of the app and cannot be easily reused anywhere else also live in `src/components`, but are prefixed with an underscore as in `_Component.vue`.
+- Prefix child components in `src/components` with an underscore `_`.
 
 ### Resourceful route entry points
 
@@ -40,7 +36,7 @@ The component `FooBarIndex` would live in `src/views/FooBars/Index.vue`.
 
 ### Child components
 
-Components that are imported by any entry point component live in `src/views/{resourceful name}/`. Use directories of that to further group children, when it makes sense.
+Components that are imported by any entry point component, sometimes referred to as "partials," live in `src/views/{resourceful name}/`. Use further directories to group children when it makes sense.
 
 Child component filenames start with a `_`, such as `_FormActions.vue`. This convention helps clarify a parent-child relationship between two or more components.
 
