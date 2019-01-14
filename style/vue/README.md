@@ -1,7 +1,7 @@
 Vue Naming
 ==========
 
-Vue is unopinionated about how to name files within the project. This can lead to calamity as different developers introduce varying conventions. This proposes a **resourceful** apporach to component file naming. 
+Vue is unopinionated about how to name files within the project. This can lead to calamity as different developers introduce varying conventions. This proposes a **resourceful** approach to component file naming.
 
 ### At a glance
 
