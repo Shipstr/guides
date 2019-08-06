@@ -17,6 +17,7 @@ Guides for getting things done, programming well, and programming in style.
   * [Rails](/style/rails)
   * [Ruby](/style/ruby)
   * [Sass](/style/sass)
+  * [Vue](/protocol/vue)
   * [Testing](/style/testing)
 * [Security](/security)
 
