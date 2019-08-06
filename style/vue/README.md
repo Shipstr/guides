@@ -5,7 +5,7 @@ Vue is unopinionated about how to name files within the project. This can lead t
 
 ### At a glance
 
-- Component filenames are ProperCased and mixins are snake_cased.
+- Component filenames are ProperCased and mixins are camcelCased.
 - Components live entirely in `src/components/` and `src/views/`.
 - Components are resourcefully named when possible: index, show, new, edit.
 - Entry-point components live at the `src/views/{resource}/` level and not any deeper.
@@ -40,6 +40,6 @@ Components that are imported by any entry point component, sometimes referred to
 
 Child component filenames start with a `_`, such as `_FormActions.vue`. This convention helps clarify a parent-child relationship between two or more components.
 
-Mixins also live one level deep in a resourceful directory, for example `src/views/{resourceful name}/formatters.js`. Mixin filenames are snake cased.
+Mixins also live one level deep in a resourceful directory, for example `src/views/{resourceful name}/formatters.js`. Mixin filenames are camelCased.
 
 Use descriptive words to make it obvious what your partial component is. For example, `Fieldset` for a piece of a form, or `FormControl` for a single more complex form control.
