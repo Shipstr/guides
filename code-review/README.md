@@ -22,9 +22,10 @@ Everyone
   If they are, use them with aplomb.
 * Talk in person if there are too many "I didn't understand" or "Alternative
   solution:" comments. Post a follow-up comment summarizing offline discussion.
-* Try to make small atomic PRs to allow simpler reviews. If a "feature" requires 
-  multiple PRs at once document the dependencies and in what order they should
-  be reviewed.
+* Make small atomic PRs to allow simpler reviews.
+* If a "feature" requires multiple PRs at once:
+  1. document the dependencies and in what order they should be reviewed.
+  1. include links to relevant PRs
 * Close stale PRs.
 
 Having Your Code Reviewed
