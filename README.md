@@ -48,7 +48,7 @@ waiting a week for everybody to leave feedback**.
 Credits
 -------
 
-Thank you, [contributors](https://github.com/theclymb/guides/graphs/contributors)!
+Thank you, [contributors](https://github.com/Shipstr/guides/graphs/contributors)!
 
 Thank you, [thoughtbot](http://github.com/thoughtbot/guides) for sharing your guides!
 

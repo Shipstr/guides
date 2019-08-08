@@ -22,10 +22,16 @@ Everyone
   If they are, use them with aplomb.
 * Talk in person if there are too many "I didn't understand" or "Alternative
   solution:" comments. Post a follow-up comment summarizing offline discussion.
+* Make small atomic PRs to allow simpler reviews.
+* If a "feature" requires multiple PRs at once:
+  1. document the dependencies and in what order they should be reviewed.
+  1. include links to relevant PRs
+* Close stale PRs.
 
 Having Your Code Reviewed
 -------------------------
 
+* Include set up and testing instructions.
 * Be grateful for the reviewer's suggestions. ("Good call. I'll make that
   change.")
 * Don't take it personally. The review is of the code, not you.
@@ -36,7 +42,16 @@ Having Your Code Reviewed
   branch. Do not squash until the branch is ready to merge. Reviewers should be
   able to read individual updates based on their earlier feedback.
 * Seek to understand the reviewer's perspective.
-* Try to respond to every comment.
+* Resolve all PR comments by:
+  1. Use the resolve button, or
+  1. Communicate directly to the reviewer, or
+  1. Comment on the PR
+* As the owner of the PR, you are responsible for :
+  1. Getting it reviewed and approved.
+  1. Respond to reviewer comments.
+  1. Keep the PR up to date with upstream commits.
+  1. Merge or closing it.
+* Use the built in Pull Request assignment and notifications features in github.
 * Wait to merge the branch until Continuous Integration tells you the test
   suite is green in the branch.
 * Merge once you feel confident in the code and its impact on the project.
@@ -55,6 +70,7 @@ Understand why the code is necessary (bug, user experience, refactoring). Then:
   them. ("What do you think about using a custom validator here?")
 * Seek to understand the author's perspective.
 * Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
+* Label nits as nits
 
 Style Comments
 --------------
